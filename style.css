@@ -1,54 +1,158 @@
-
-.titulo-centrado {
-  text-align: center;
-  background-color: #cccccc;
+header {
+  background-color: #6f8299;
+  padding: 20px 0;
 }
 
-p {
-  text-align: center;
-  background-color: #110f1a;
-  color: #cccccc;
+.caja {
+  width: 940px; /*940 porque es el 70% del tamaño común de las pantallas*/
+  position: relative;
+  margin: 0 auto;
 }
 
-/*tengo dos <strong>. haciendo "em strong" estoy aplicando el rojo solamente al <strong> que está dentro del <em>*/
-em strong {
-  color: red;
+nav {
+  position: absolute;
+  top: 110px;
+  right: 0;
 }
 
-#banner {
-  width: 100%;
+nav li {
+  display: inline;
+  margin: 0 0 0 15px;
 }
 
-#mission {
-  font-size: 20px;
+nav a {
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
 }
 
-.titulo-principal {
-  padding-left: 30px;
+nav a:hover {
+  color: #591fb6;
 }
 
-ul {
+.productos {
+  width: 940px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.productos li {
   display: inline-block;
+  text-align: center;
+  width: 30%;
   vertical-align: top;
-  width: 20%;
-  margin-right: 15%;
+  margin: 0 1.5%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  /*Este border de arriba hace lo mismo que los 3 de abajo pero en una sola línea.
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;*/
+  border-radius: 10px;
 }
 
-.items {
-  font-style: italic;
+.productos h2 {
+  font-size: 30px;
+  font-weight: bold;
 }
 
-.principal {
-  background: #110f1a;
-  padding: 20px;
+.producto-descripcion {
+  font-size: 18px;
 }
 
-.diferenciales {
-  background-color: aliceblue;
-  padding: 30px;
+.producto-precio {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
-.imgDiferencial {
+.productos li:hover {
+  border-color: #591fb6;
+}
+
+.productos li:hover h2 {
+  /* Para cambiar un elemento dentro de otro con el hover -> li:hover h2 (el h2 dentro del hover del li)*/
+  font-size: 33px;
+}
+
+.productos li:active {
+  border-color: coral;
+}
+
+footer {
+  text-align: center;
+  color: azure;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  background: url(img/bg.jpg);
+}
+
+.copyright {
+    color: white;
+    font-size: 13px;
+    margin: 20px;
+}
+
+main {
+  width: 940px;
+  margin: 0 auto;
+
+}
+
+form {
+  margin: 40px 0;
+}
+
+form label, form p, legend {
+  display: block;
+  font-size: 20px;
+  margin: 0 0 5px;
+}
+
+.input-padron {
+  display: block;
+  margin: 0 0 15px;
+  padding: 10px 20px;
   width: 50%;
 }
 
+.checkbox {
+  margin: 20px 0;
+}
+
+.enviar {
+  width: 30%;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: orange;
+  border: none;
+  border-radius: 5px;
+  transition: 1s all;
+  cursor: pointer;
+}
+
+.enviar:hover {
+  background: orangered;
+  transform: scale(110%) rotate(-1deg);
+}
+
+table {
+  margin: 40px 0;
+  width: 50%;
+}
+
+thead {
+  background: #555555;
+  color: white;
+  font-weight: bold;
+}
+
+td, th {
+  border: 1px solid black;
+  padding: 8px 15px;
+}

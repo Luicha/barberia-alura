@@ -1,12 +1,92 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Contacto</title>
 </head>
+
 <body>
-    
+    <header>
+        <div class="caja">
+            <h1><img src="/img/logo.png" alt="Logotipo de la barbería"></h1>
+            <nav>
+                <ul class="navlist">
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/productos.html">Productos</a></li>
+                    <li><a href="/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Día</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lunes</td>
+                <td>08 - 20 h</td>
+            </tr>
+            <tr>
+                <td>Miércoles</td>
+                <td>08 - 20 h</td>
+            </tr>
+            <tr>
+                <td>Viernes</td>
+                <td>08 - 20 h</td>
+            </tr>  
+            </tbody>
+        </table>
+        <form>
+            <label for="nombreapellido">Nombre y Apellido</label>
+            <input type="text" id="nombreapellido" class="input-padron" required>
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" class="input-padron" required placeholder="email@ejemplo.com">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" class="input-padron" required placeholder="2620000000">
+            <label for="mensaje">Mensaje</label>
+            <textarea name="" id="mensaje" cols="70" rows="8" class="input-padron"></textarea>
+
+            <fieldset>
+                <legend>¿Cómo quiere que le contactemos?</legend>
+                <label for="radio-email"><input type="radio" name="contacto" value="email"
+                        id="radio-email">Email</label>
+                <label for="radio-telefono"><input type="radio" name="contacto" value="telefono"
+                        id="radio-telefono">Teléfono</label>
+                <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" checked
+                        id="radio-whatsapp">WhatsApp</label>
+            </fieldset>
+            <fieldset>
+                <legend>¿En qué horario prefiere ser atendido?</legend>
+                <select>
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                    <option>Noche</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox" name="" id="" checked>¿Desea recibir novedades de la
+                barbería?</label>
+
+            <input type="submit" value="Enviar" class="enviar">
+        </form>
+
+        
+
+    </main>
+    <footer>
+        <img src="/img/logo-blanco.png" alt="">
+        <p class="copyright">&copy Todos los derechos reservados - 2022</p>
+    </footer>
 </body>
+
 </html>
