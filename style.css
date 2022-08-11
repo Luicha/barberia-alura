@@ -1,0 +1,54 @@
+
+.titulo-centrado {
+  text-align: center;
+  background-color: #cccccc;
+}
+
+p {
+  text-align: center;
+  background-color: #110f1a;
+  color: #cccccc;
+}
+
+/*tengo dos <strong>. haciendo "em strong" estoy aplicando el rojo solamente al <strong> que está dentro del <em>*/
+em strong {
+  color: red;
+}
+
+#banner {
+  width: 100%;
+}
+
+#mission {
+  font-size: 20px;
+}
+
+.titulo-principal {
+  padding-left: 30px;
+}
+
+ul {
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+  margin-right: 15%;
+}
+
+.items {
+  font-style: italic;
+}
+
+.principal {
+  background: #110f1a;
+  padding: 20px;
+}
+
+.diferenciales {
+  background-color: aliceblue;
+  padding: 30px;
+}
+
+.imgDiferencial {
+  width: 50%;
+}
+
